@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4f8cff, #38c6d9);
+    padding: 20px;
+}
+
+/* LOGIN CONTAINER */
+.container {
+    background: white;
+    width: 360px;
+    padding: 40px 38px;
+    border-radius: 14px;
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* TITLE */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    color: #222;
+}
+
+/* LABELS */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #444;
+}
+
+/* INPUTS */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 22px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* OPTIONS ROW */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 13px;
+}
+
+.options span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: #4f8cff;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background: #2f6fe0;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Login</h2>
+
+<form action="dashboard.html">
+
+<label>Username:</label>
+<input type="text" placeholder="Enter username" required>
+
+<label>Password:</label>
+<input type="password" placeholder="Enter password" required>
+
+<div class="options">
+<span><input type="checkbox"> Remember me</span>
+<a href="#">Forgot password?</a>
+</div>
+
+<button type="submit">Login</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
